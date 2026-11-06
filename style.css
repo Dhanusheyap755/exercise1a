@@ -1,0 +1,252 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #f2f2f2;
+    color: #111827;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: stretch;
+}
+
+/* LEFT SIDEBAR */
+.left {
+    width: 30%;
+    flex-shrink: 0;
+    min-height: 100vh;
+    padding: 30px;
+    color: white;
+    background: linear-gradient(180deg, #3b82f6, #2563eb);
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    border: 4px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.profile h2 {
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.profile p {
+    font-size: 16px;
+}
+
+/* ABOUT, EDUCATION, CONTACT */
+.section {
+    margin-top: 28px;
+}
+
+.section h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* RIGHT CONTENT */
+.right {
+    flex: 1;
+    min-width: 0;
+    min-height: 100vh;
+    padding: 40px;
+    background: white;
+    border-radius: 20px 0 0 20px;
+}
+
+.right h1 {
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    color: #111111;
+}
+
+.right h2 {
+    font-size: 26px;
+    line-height: 1.4;
+    color: #2563eb;
+    margin-bottom: 24px;
+}
+
+.right h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* SKILLS */
+.skills {
+    margin-top: 5px;
+}
+
+.skill-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-box div {
+    padding: 10px 18px;
+    background: #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+}
+
+/* PROJECTS */
+.projects {
+    margin-top: 30px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+    color: white;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card h4 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.green {
+    background: linear-gradient(to right, #10b981, #34d399);
+}
+
+.orange {
+    background: linear-gradient(to right, #f97316, #fb923c);
+}
+
+/* EXPERIENCE */
+.experience {
+    margin-top: 30px;
+}
+
+.experience p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .left {
+        width: 32%;
+        padding: 24px;
+    }
+
+    .right {
+        padding: 30px;
+    }
+
+    .right h1 {
+        font-size: 32px;
+    }
+
+    .right h2 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        min-height: auto;
+        padding: 25px 20px;
+    }
+
+    .right {
+        width: 100%;
+        min-height: auto;
+        padding: 25px 20px;
+        border-radius: 0;
+    }
+
+    .right h1 {
+        font-size: 30px;
+    }
+
+    .right h2 {
+        font-size: 22px;
+    }
+
+    .skill-box {
+        gap: 10px;
+    }
+
+    .skill-box div {
+        padding: 9px 14px;
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .right h1 {
+        font-size: 26px;
+    }
+
+    .right h2 {
+        font-size: 20px;
+    }
+
+    .section h3,
+    .right h3 {
+        font-size: 18px;
+    }
+}
